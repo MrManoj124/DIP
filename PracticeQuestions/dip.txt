@@ -1,0 +1,31 @@
+%K=imread('cameraman.tif');
+%imshow(K);%to show case the exact pixel value for the picture 
+%imagesc(K);%to choose to get the color value for the picture as per color table within 0-255
+%colormap('summer');%get a default value for the picture with a LIBRARY nam
+%title('summer');
+%colormap('autumn');
+%title('Autumn');
+A=imread("Z:\DIP\llama.jpg");
+
+imshow(A);
+title('summer');
+imwrite(A,'Mano.png');
+%surf(peaks);
+colormap("hot");
+
+
+
+
+
+
+
+
+%A=imread('C:\Users\TEMP.TECH0.041\Desktop\DIP\blobs.png');
+A=imread("C:\Users\TEMP.TECH0.041\Desktop\DIP\indiancorn.jpg");
+imwrite(A,'manoj.jpg')
+img = imread('manoj.jpg');
+grayImg = rgb2gray(img); % Convert to 2D grayscale
+imagesc(grayImg);        % Show image with scaled colors
+colormap("winter");           % Apply the colormap
+colorbar;                % Optional: show the color scale
+

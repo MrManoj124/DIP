@@ -1,0 +1,73 @@
+M=imread('cameraman.tif');
+subplot(2,2,1);
+imshow(M);
+
+subplot(2,2,2);
+imagesc(M);
+colormap('gray');
+
+B=imadd(M,100);
+subplot(2,2,3);
+imshow(B);
+
+C=imread("onion.png");
+S=rgb2gray(C);
+subplot(2,2,4);
+imshow(S);
+
+
+K=imread('toycars1.png');
+subplot(2,2,1);
+imshow(K);
+
+L=imread('toycars2.png');
+subplot(2,2,2);
+imshow(L);
+
+D=imadd(K,L);
+subplot(2,2,3);
+imshow(D);
+
+F=imsubtract(K,L);
+subplot(2,2,4)
+imshow(F);
+
+Output_exact=imabsdiff(K,L);%
+subplot(2,3,5), imshow(Output_exact);%Display resize 
+
+
+
+DIP_Sample paper
+
+A=imread('hands1.jpg');
+subplot(2,2,1);
+imshow(A);
+
+B=imread('hands2.jpg');
+subplot(2,2,2);
+imshow(B);
+
+function X=DifferenceImages(A,B)
+    X=imsubtract(A,B);
+end
+
+C=DifferenceImages(A,B);
+subplot(2,2,3);
+imshow("circles.png");
+
+for i=1:size(hands1,1)
+    for j=1:size(hands1,2)
+        if hands1(i,j)>200
+            hands1
+
+        end
+    end
+end
+
+
+
+
+
+
+
+

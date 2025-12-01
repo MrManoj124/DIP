@@ -1,0 +1,17 @@
+A=imread('hands1.jpg');
+subplot(2,2,1);
+imshow(A);
+
+B=imread('hands2.jpg');
+subplot(2,2,2);
+imshow(B);
+
+function DifferenceImages(K,L)
+    absolute_difference()
+
+end
+
+
+
+
+
